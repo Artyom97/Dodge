@@ -1,0 +1,19 @@
+.CardHistories {
+  padding: 40px 20px;
+
+  .CardHistories-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .CardHistories-block__design {
+      background-color: darkgray;
+
+      .CardHistories-block__img {
+        height: 300px;
+        width: 250px;
+      }
+
+    }
+  }
+}
