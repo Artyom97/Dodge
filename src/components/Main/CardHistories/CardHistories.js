@@ -1,6 +1,9 @@
 import React, {Component} from "react";
 import './CardHistories.scss';
-import dodge from '../../../assets/images/dodge-logo.gif';
+import charger1 from '../../../assets/images/charger1.jpg';
+import charger2 from '../../../assets/images/charger2.jpg';
+import challenger1 from '../../../assets/images/challenger1.jpg';
+import challenger2 from '../../../assets/images/challenger2.jpg';
 
 class CardHistories extends Component {
     render () {
@@ -9,7 +12,7 @@ class CardHistories extends Component {
                 <div className='CardHistories-block'>
                     <div className='CardHistories-block__design'>
                         <div className='CardHistories-block__img'>
-                            <img src={dodge} alt="imageCard1"/>
+                            <img src={charger1} alt="imageCard1"/>
                         </div>
                         <div>
                             <a href="#">Instagram</a>
@@ -17,7 +20,7 @@ class CardHistories extends Component {
                     </div>
                     <div className='CardHistories-block__design'>
                         <div className='CardHistories-block__img'>
-                            <img src='#' alt="imageCard2"/>
+                            <img src={charger2} alt="imageCard2"/>
                         </div>
                         <div>
                             <a href="#">Instagram</a>
@@ -25,7 +28,7 @@ class CardHistories extends Component {
                     </div>
                     <div className='CardHistories-block__design'>
                         <div className='CardHistories-block__img'>
-                            <img src='#' alt="imageCard3"/>
+                            <img src={challenger1} alt="imageCard3"/>
                         </div>
                         <div>
                             <a href="#">Instagram</a>
@@ -33,7 +36,7 @@ class CardHistories extends Component {
                     </div>
                     <div className='CardHistories-block__design'>
                         <div className='CardHistories-block__img'>
-                            <img src='#' alt="imageCard4"/>
+                            <img src={challenger2} alt="imageCard4"/>
                         </div>
                         <div>
                             <a href="#">Instagram</a>
