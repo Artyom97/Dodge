@@ -1,13 +1,24 @@
 .MainArea {
   width: 100%;
   background: white;
-  box-shadow: 0px 0px 5px #61086B;
   background: linear-gradient(90deg, #4c0004 -13%, #000000 40%, #000000 68%, #4c0004);
   margin-top: 50px;
   margin-bottom: 50px;
 
-    .MainArea-Logo {
-      display: flex;
-      justify-content: center;
+  .MainArea-block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .MainArea-block__img{
+      max-width: 380px;
+
+      >img {
+        width: 100%;
+      }
+
     }
+
+  }
+
 }

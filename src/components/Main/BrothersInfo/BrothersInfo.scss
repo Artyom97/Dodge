@@ -1,5 +1,5 @@
 .BrothersInfo {
-  padding: 40px 20px;
+  padding: 100px 20px;
 
   .BrothersInfo-block {
     display: flex;
@@ -11,6 +11,10 @@
       .BrothersInfo-block__img {
         height: 400px;
         width: 340px;
+
+        > img {
+          width: 100%;
+        }
       }
     }
   }

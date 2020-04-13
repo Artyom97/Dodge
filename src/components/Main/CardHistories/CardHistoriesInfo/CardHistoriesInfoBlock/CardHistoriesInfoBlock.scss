@@ -1,0 +1,37 @@
+.CardHistories-block__design {
+  background-color: #ffffff;
+
+  .CardHistories-block__img {
+    height: 250px;
+    width: 250px;
+
+    > img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  .CardHistories-block__text {
+    padding: 20px 0;
+
+    > p {
+      font-family: sans-serif;
+      font-size: 24px;
+      color: #9b0000;
+      letter-spacing: 1px;
+    }
+
+    > a {
+      font-family: "Bold Aardvark";
+      font-size: 16px;
+      color: rgba(0, 0, 0, 0.76);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    > a:hover {
+      color: #9b0000;
+      transition: all 0.3s;
+    }
+  }
+}

@@ -1,47 +1,53 @@
-import React, {Component} from "react";
+import React , { Component } from "react";
 import './CardHistories.scss';
+import CardHistoriesInfo from "./CardHistoriesInfo/CardHistoriesInfo";
 import charger1 from '../../../assets/images/charger1.jpg';
 import charger2 from '../../../assets/images/charger2.jpg';
 import challenger1 from '../../../assets/images/challenger1.jpg';
 import challenger2 from '../../../assets/images/challenger2.jpg';
 
 class CardHistories extends Component {
+    constructor (props) {
+        super (props);
+        this.state = {
+            titleOne: 'Dodge Charger',
+            titleTwo: 'Dodge Challenger',
+            hrefLink: '#',
+            moreInfo: 'More Info'
+        }
+    }
     render () {
         return (
             <div className='CardHistories'>
                 <div className='CardHistories-block'>
-                    <div className='CardHistories-block__design'>
-                        <div className='CardHistories-block__img'>
-                            <img src={charger1} alt="imageCard1"/>
-                        </div>
-                        <div>
-                            <a href="#">Instagram</a>
-                        </div>
-                    </div>
-                    <div className='CardHistories-block__design'>
-                        <div className='CardHistories-block__img'>
-                            <img src={charger2} alt="imageCard2"/>
-                        </div>
-                        <div>
-                            <a href="#">Instagram</a>
-                        </div>
-                    </div>
-                    <div className='CardHistories-block__design'>
-                        <div className='CardHistories-block__img'>
-                            <img src={challenger1} alt="imageCard3"/>
-                        </div>
-                        <div>
-                            <a href="#">Instagram</a>
-                        </div>
-                    </div>
-                    <div className='CardHistories-block__design'>
-                        <div className='CardHistories-block__img'>
-                            <img src={challenger2} alt="imageCard4"/>
-                        </div>
-                        <div>
-                            <a href="#">Instagram</a>
-                        </div>
-                    </div>
+                   <CardHistoriesInfo
+                       image={charger1}
+                       name={this.state.name}
+                       hrefLink={this.state.hrefLink}
+                       moreInfo={this.state.moreInfo}
+                       titleOne={this.state.titleOne}
+                   />
+                    <CardHistoriesInfo
+                        image={charger2}
+                        name={this.state.name}
+                        hrefLink={this.state.hrefLink}
+                        moreInfo={this.state.moreInfo}
+                        titleOne={this.state.titleOne}
+                    />
+                    <CardHistoriesInfo
+                        image={challenger1}
+                        name={this.state.name}
+                        hrefLink={this.state.hrefLink}
+                        moreInfo={this.state.moreInfo}
+                        titleOne={this.state.titleTwo}
+                    />
+                    <CardHistoriesInfo
+                        image={challenger2}
+                        name={this.state.name}
+                        hrefLink={this.state.hrefLink}
+                        moreInfo={this.state.moreInfo}
+                        titleOne={this.state.titleTwo}
+                    />
                 </div>
             </div>
         );
