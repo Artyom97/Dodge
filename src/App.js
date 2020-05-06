@@ -15,7 +15,7 @@ export default function App() {
             <CardHistories />
             <BrothersInfo />
             <Footer/>
-       </div> //changed sdsdsdsdssdsd jujubulas
+       </div> //changed sdsdsdsdssdsd dfdfd
     );
 }
 
