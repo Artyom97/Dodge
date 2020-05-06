@@ -5,7 +5,6 @@ import './App.scss';
 import MainArea from "./components/Main/MainArea/MainArea";
 import CardHistories from "./components/Main/CardHistories/CardHistories";
 import BrothersInfo from "./components/Main/BrothersInfo/BrothersInfo";
-import OnChange from './components/Main/Carousel/CarouselInfo';
 
 export default function App() {
     return (
@@ -14,10 +13,9 @@ export default function App() {
             <CardHistories />
             <MainArea />
             <CardHistories />
-            <OnChange />
             <BrothersInfo />
             <Footer/>
-       </div>
+       </div> //changed 
     );
 }
 

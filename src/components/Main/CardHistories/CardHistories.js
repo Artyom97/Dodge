@@ -16,6 +16,7 @@ class CardHistories extends Component {
             moreInfo: 'More Info'
         }
     }
+
     render () {
         return (
             <div className='CardHistories'>
